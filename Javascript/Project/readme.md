@@ -1,1 +1,3 @@
-*** This repo contain small project in javascripts.***
+# Small JavaScript Project
+
+This repository contains a small project built using JavaScript.
