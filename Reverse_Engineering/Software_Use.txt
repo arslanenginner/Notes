@@ -1,0 +1,28 @@
+
+ 
+gdb Cracker 
+ 
+$ gdb crackme 
+
+$ run               //to run file
+$ info functions   //see a lot of functions so quite and open again	
+$ disassemble function(main)   //show main in assembly
+
+$ set disassembly-flavor intel      // set code flavou to intel/atnt
+$ break *adress 		// * compulsary with adress then run 
+$ info registers        //get info of registers (value of easx)
+
+$ nexti/ni    //next instruction (next adress)
+$ print <arug>    // show value of give arugment
+
+
+
+
+Radara-2 (r2)
+
+$ r2 -d ./crackme2
+$ aaa                     //analyze binary 
+$ afl                //get functions
+$ db main            //debug break and start program from main
+$ dc		     //continue in debuging mode
+$ pdf		     //print assembly code (intel syntax bydefault)
