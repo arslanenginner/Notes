@@ -1,0 +1,6 @@
+
+
+npm init
+npm install express       // for express
+npm install mongoose        //for MongoDB
+npm install nodemon       //auto restart

@@ -1,0 +1,68 @@
+
+
+Methodologies
+There are plenty of ways to perform a code review. You can find some methods below:
+
+String matching/Grep for bugs.
+Following user inputs.
+Reading source code randomly.
+Read all the code.
+Check one functionality at a time (login, password reset...).
+
+String matching/Grep for bugs
+This is probably the fastest way to find low-hanging fruits; you just try to find patterns of known vulnerabilities. For example, you can use grep to find calls to the PHP system function.
+
+```search
+$ grep -R 'system($_' *
+```
+
+Another way to approach a review is to follow all the user-controlled inputs and identify all the ways to access the application (the routes/URIs available), for example in PHP:
+
+$_POST/$_GET/$_REQUEST.
+$_COOKIE/$_SERVER.
+Data coming from the database (for stored XSSs and second-order injections for example).
+Data read from a file or a cache.
+
+The more time-consuming way: just start reading the code one file at the time. A better way to do this is to try to find weaknesses, not vulnerabilities. From there, you can see if the weaknesses can become vulnerabilities on their own or by chaining them.
+
+Another way to review the functionality
+"Password reset".
+"Database access".
+"Authentication".
+And review all the code associated with this functionality.
+
+What to check is ...
+
+Weird behaviors.
+Missing checks.
+Complexity.
+Security checks already in place.
+Differences between 2 functions/methods/classes.
+Comparisons and conditions (if/else).
+Regular expressions/string matching.
+What is missing?
+
+You will encounter function or classes etc that you may not know so you need to google them.
+It's going to take time (especially early on), but the more code you review, the easier it gets.
+
+
+
+
+Escape sequence is a way to represent special characters inside a string using a backslash (\).
+\n → newline (line break)
+\t → tab character
+\\ → a single backslash
+
+
+new RegExp("^(sub1|sub2).example.com$")   
+. = wildcard so match any character
+allow sub1Xexample.com
+
+new RegExp("^(sub1|sub2)\.example\.com$")
+inside a JS string, \. is not preserved, it becomes just "."
+allow sub1Xexample.com
+
+
+new RegExp("^(sub1|sub2)\\.example\\.com$")
+In a JS string, \\. becomes \. inside the regex engine. Matches litteral dot
+not allow  sub1Xexample.com

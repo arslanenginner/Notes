@@ -1,0 +1,14 @@
+
+
+         *** Restfull API ***
+Rules/Best practicies:
+1. work as server and client (both are no dependent on each other)
+     if client accept htm such as browser so
+        HTML (created on server ) SSR(server side render) ==>  sent to client
+
+     if data sent in format of json or XML
+        Data sent by server in format ==> client read raw data and render on his screen
+
+2. Always respect all HTTP methods
+     Get /getuser      //why using get name again
+     POST /updateuser  //why using update name again

@@ -1,0 +1,14 @@
+
+npm init -y
+npm i express
+nodemon main.js           //autorestart server
+
+# Handling HTTP POST request
+Url of request save in server logs so we can't send senstive data in url through GET request.
+
+# Installing POST man for POST Requests
+
+# Chanin the request (single endpoints)
+like app.post or get or put
+
+# Serve the HTMl with template directory

@@ -1,0 +1,9 @@
+
+Call stack is part of memory used to keep track of function called.
+
+
+==> when fun called it push on to stack.
+==> During Execution local var created.
+==> After Execution it popped out from stack
+==> All its local variables removed from memory.
+

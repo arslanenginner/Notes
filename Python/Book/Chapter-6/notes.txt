@@ -1,0 +1,61 @@
+
+==> List:
+A list is a value that contain multiple values store in a variable and pass to function. They seprated by comma and use Sq brackets.
+
+=> Integer Inside sq brackets that follows list called Index.
+=> Index can get single value while slice can ge multiple values from list.
+
+==> Methods:
+A method is the same thing as a function, except it is called on a value. Think of a method as a function that is always associated with a value.
+
+The append() and insert() methods are list methods, and we can call them on list values only, not on values of other data types, such as strings or integers.
+
+
+==> You can also split up a single instruction across multiple lines by ending each line with the line continuation character (\).
+
+==> Short-circuiting in Python refers to the practice where logical expressions are evaluated left to right and stop as soon as the outcome is determined.
+
+
+==> Sequence Data Types
+Lists aren’t the only data types that represent ordered sequences of values. strings and lists are actually similar if you consider a string to be a “list” of single text characters.
+
+
+Mutable and Immutable Data Types
+==> mutable refers to objects whose state or value can be changed after they are created while immutable refers to objects whose state or value cannot be altered once they are created. Mutable objects, such as lists, dictionaries, and sets allow for direct modifications to their contents like adding, removing, or changing elements and they retain the same memory location after modification.
+
+==> immutable objects including integers, floats, strings, tuples cannot be changed after creation, any operation that appears to modify them actually creates a new object with the modified value resulting in a new memory address.
+
+Tuple take less memory and list take more memory. List can be changed but string cannot. If you wanted to actually modify the original list in eggs to contain ['x', 'y', 'z'], you would have to use del statements and the append() method
+
+
+==> Tuple Data Type
+Tuple are written using paratheses and are immutable like strings. They can be changes after created.
+
+# Reference 
+A reference is a way to access a value stored in memory.
+
+# Arguments
+When you pass a value to a function in Python, what actually gets passed is a reference to the object, not a copy of the object.
+
+==>  copy() and deepcopy() Functions
+IF yoo do not want to changes in original list or dict so python provide copy module. Both copy() and deepcopy(). copy.copy() make duplicate of mutable val. 
+
+
+
+# Both are different ways
+import math   
+math.sqrt(49)   # importe library but always have to use math
+
+from math import sqrt
+sqrt(256)       # Import sqrt from library and donot need to use 
+f=sqrt      # sava sqrt into var
+f(16)       # do same work as sqrt function
+
+
+from math import pi         # Import variable pi 
+pi * 5 
+
+help(math)        # documentation of library
+help(math.sqrt)         # Documentation of function
+
+

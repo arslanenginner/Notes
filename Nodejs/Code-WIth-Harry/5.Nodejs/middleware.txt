@@ -1,0 +1,15 @@
+
+A middleware is fun that run before any request,  have request and respose object to send,
+let susspose we have multiple middlewares so first we use for logging the client request other or another work etc.
+
+Order is important in middleware so middleware that run later will execure code 
+
+1. Application level middleware (app.use)
+2. Router Level middleware  (work in specific router)
+3. Error Handling middleware  ( handle error and what do next)
+4. Built in middleware 
+    static files    (handle static files)
+    json files      (parse encoming request in json)
+    Urlencoded      (parse encoming request with url encoded paylaod)
+
+5. Third party middleware  (use others middleware)

@@ -1,0 +1,13 @@
+
+npm i --global nodemon       # set for all directories
+nodemon file.js           # auto restart server
+npm init -y
+
+npm i express       # install express
+npm i express@v      # Install specific version like    npm i express@4
+
+
+slug   # write parameter
+
+
+Express not display all files so always use folder with name public or anything else to provide other users.

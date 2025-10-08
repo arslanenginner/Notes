@@ -1,0 +1,20 @@
+
+for automatically restart server on every change
+npm i nodemon    
+
+REST API - json
+
+GET /user   -- render HTML page for all users
+GET /api/user -- send data in json for mobile apps etc
+
+GET /api/user/1 -- get first user
+GET /api/user/2 -- get second user
+
+Dynamic Path parameters
+GET /api/users/:id
+
+POST /api/users -- create new users
+
+PATCH /api/user/1 -- update user with ID 1
+ 
+DELETE /api/user/1 -- Delete user with ID 1

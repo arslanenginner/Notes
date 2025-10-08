@@ -1,0 +1,26 @@
+
+
+Add Css in HTML pages and execute using npx without installing any package.
+
+npx install -D tailwindcss             // install as development to dependencies
+npx tailwindcss init 
+
+src/input.css  contain components and compile them in browser.
+watch the  HTMl and js files and add this configuration in tailconfig file
+
+check this tailwindcss website. https://tailwindcss.com/
+
+
+
+#######################################################
+
+# For React Project
+npx create-react-app with react
+npm start
+
+nodemodeule  (contain all packages)
+public (all directly accessible files)
+index.js   add all react app in publiv/index.html id=root
+app.js  main react app
+React follow syntax called jsx 
+compenets like navbar,footer etc all in src directory

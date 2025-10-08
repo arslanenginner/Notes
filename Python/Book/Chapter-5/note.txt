@@ -1,0 +1,21 @@
+
+==> In Python, an exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions.
+Exception as err used  when you want to catch the exception and access its error message or type.
+
+##### Raise Exception (raise error)
+==> Python raise exception when ever try to run ivalide code. You can use try and except but usingt this you can raise your own exception. "its way of saying stop running this code". Its built in python error class and can raise it manually.
+    The raise keyword
+    A call to the Exception() function
+    A string with a helpful error message passed to the Exception() function
+Exception mean they are not normal occurs in few cases. Try and except comes from java.
+
+##### Assertion
+==> An assertion is sanity check to make sure code is not doing something wrong. Assert statment used to perform these checks. If sanity fail code raise AssertionErro.
+    Assert Keyword
+    condition that evaluate (T/F)
+    comma and string to display when (F)
+
+
+##### Multiple Assignment
+Assigning Multiple values to multiple variable called Multiple Assignment 
+Logging used to log the errors in file according to specific time.

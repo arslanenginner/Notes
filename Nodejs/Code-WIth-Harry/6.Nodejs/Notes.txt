@@ -1,0 +1,15 @@
+
+
+npm init -y
+npm i express
+npm i bootstrap
+npm i ejs
+
+get express code
+get bootstrap code
+
+To add incoming data in website we will use a template engine called 
+
+we can also pass the array. like
+arr=[0,46,897,2,46,894,48]
+arr

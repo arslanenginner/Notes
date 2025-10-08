@@ -1,0 +1,3 @@
+
+==> Dictionary Data Type
+Dict use many differ datatypes, indexes called keys and key assocciated with value called key-value pair.

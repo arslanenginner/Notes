@@ -1,0 +1,19 @@
+
+MongoDB is NoSQL database work on BSON format.Its best for nodejs applications.
+
+Packages:
+npm install mongoose
+
+In sql we have table but in mongodb we have collection.
+Collection: "Users"     
+ 
+ MongoDB change schema into plural mean (user to users)
+schema             create schema (define mongodb structure)
+schema             create model using schema
+Model              using model perform crud opertaions (create,operate,read,delete,)
+
+ show dbs 
+ use databse_name
+ show collections   //show all tables
+ db.db_name.find({})  //find user data
+ db.users.insert({ data })   //insert data in users table

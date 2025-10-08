@@ -1,0 +1,25 @@
+Practice Tasks: Write Full Programs with Regex
+Find All Phone Numbers
+Write a program that takes a block of text and extracts all phone numbers in the format 123-456-7890.
+
+Validate Email Addresses
+Write a program that reads a list of strings and prints only the valid email addresses.
+
+Extract Dates
+Write a program that finds all dates in the format DD/MM/YYYY from a given text.
+
+Words Replacer
+Write a program that replaces any occurrence of the words bad, ugly, or stupid with ****.
+
+Find Repeated Words
+Write a program that detects and prints all words repeated twice in a row, e.g., hello hello.
+
+Extract Hashtags
+Write a program that extracts all hashtags from a given string such as #coding, #python.
+
+Password Strength Check
+Write a program that checks if a string qualifies as a strong password: at least 8 characters, includes uppercase, lowercase, digit, and special character.
+
+Find Specific Word Lengths
+Write a program that prints all words with exactly 7 letters from a given text.
+

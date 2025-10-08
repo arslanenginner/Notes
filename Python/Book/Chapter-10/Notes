@@ -1,0 +1,53 @@
+
+
+OS module working with str for path get messay in different OS. 
+Pathlib module represent file pass as obj not str and more readable less prone to error.
+
+==> Standardizing Path Separators
+Represent file path as obj so you don't need to worry about \ or / slashes. Path library  can handle it. You just need to provide the file or dir name. It will auto detect according to OS.
+
+
+==> Joining Paths
+we use + operator to add two integer and concatenate two strings. / Operator use to concatenate obj and str.
+
+
+==> Current Working Directory
+we can get cwd with Path.cwd() and replace it with os.chadir()
+
+==> Parts of File path
+1. The anchor, which is the root folder of the filesystem
+2. On Windows, the drive, which is the single letter that often denotes a physical hard drive or other storage device
+3. The parent, which is the folder that contains the file
+4. The name of the file, made up of the stem (or base name) and the suffix (or extension)
+
+==> Finding File Sizes and Timestamps
+stat() method return state_result obj with file size and timestamp info about file.
+
+
+==> Finding Files Using Glob Patterns
+The * character matches any text, and the ? character matches exactly one character. Here * and ? can be used for both files and folder.
+'*.txt' matches all files that end with .txt.
+'project?.txt' matches 'project1.txt', 'project2.txt', or 'projectX.txt'.
+'*project?.*' matches 'catproject5.txt' or 'secret_project7.docx'.
+'*' matches all filenames.
+
+Path objects of folders have a glob() method for listing any content in the folder that matches the glob pattern. 
+
+==> Checking Path Validity
+Many python fun crash if valid path not exist so we can use exists() to check valid path.
+
+The older os.path module can accomplish the same task with the os.path.exists(path), os.path.isfile(path), and os.path.isdir(path) functions, which act just like their Path function counterparts. As of Python 3.6, these functions can accept Path objects as well as strings of the filepaths.
+
+==> The File Reading and Writing Process
+Plaintext files contain only basic text characters and do not include font, size, or color information. Text files with the .txt extension or python scripts.
+Binary files are all other file types, such as word processing documents, PDFs, images, spreadsheets, and executable programs. If you open a binary file in Notepad or TextEdit, it will look like scrambled nonsense
+
+
+Keep in mind that these Path object methods allow only basic interactions with files. The more common way of writing to a file involves using the open() function and file objects. 
+
+  1.  Call the open() function to return a File object.
+  2.  Call the read() or write() method on the File object.
+  3.  Close the file by calling the close() method on the File object.
+
+==> Opening Files
+Pass it as string and can be either absolute path or relative path. Oper fun return a file obj.

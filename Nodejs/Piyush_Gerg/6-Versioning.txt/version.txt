@@ -1,0 +1,31 @@
+
+Version
+
+"^5.12.4"
+
+1st part (Beta update Major/Breaking (recomended for new built app) switching old app can be breaking)
+5
+2nd part (Updating server Recomended security Fix)
+8 ==> 4.9.0
+3rd part  (Updating server is optional its minor changes)
+4 ==> 4.8.5
+
+
+Go to npmjs.com and search version want to release.
+npm i express@version
+
+^  represent compatible with server and always install version having with carrot symbol
+mean having carrot symbol 1st part will not changed and other version will be updated.
+^4.5.1 --- 4.x.x
+
+~ line represent do not change 1st and 2nd part
+~4.5.1 --- 4.5.x
+
+we can also provide range to update between ranges
+4.2.4 - 5.1.
+
+we can also give x such as 
+4.2.x       //x will be changed
+
+we can also use latest
+latest      //always shift to latest version

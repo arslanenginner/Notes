@@ -1,0 +1,14 @@
+
+==> String Literals
+String values that literally appear in our code are called string literals.
+
+An escape character consists of a backslash (\) followed by the character you want to add to the string.
+
+MultiLine string start and end with three single or double quotes.
+
+==> Indexes and Slices
+String use indexes same as list use.
+
+
+==> Copying and Pasting Strings
+paperclip module make easy to copy and paste data from clipboard. sending output of program to clipboard make it more easy.

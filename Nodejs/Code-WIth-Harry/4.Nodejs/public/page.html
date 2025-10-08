@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing POST Request</title>
+</head>
+<body>
+    
+    <script>
+        async function testpost(){  //async let use of await from Asynchronous operation
+            let a = await fetch("/",{method:"POST"})  //send POST request and await will wait until response recived
+            let b = await a.text()      //get data from a and pause untill data recived
+            console.log(b)   
+        }
+    </script>
+</body>
+</html>

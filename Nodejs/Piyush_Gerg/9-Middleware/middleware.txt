@@ -1,0 +1,12 @@
+Middleware are the functions that have access to req and res and next middleware function.
+
+Execute code and call next middlware fun in stack
+Execute on every request
+Make changes to req/res object
+Have control to end the req/res cycle
+
+
+ User ==> Middleware ==> Server
+
+ Multiple Middlewares
+ User ==> Middleware(check legitmate user) ==> Middleware (Check credentials) ==> Server

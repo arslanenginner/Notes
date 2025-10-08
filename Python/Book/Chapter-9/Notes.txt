@@ -1,0 +1,52 @@
+
+==> Regex
+A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.
+RegEx can be used to check if a string contains the specified search pattern.
+regex strings   r'\d\d\d-\d\d\d-\d\d\d\d'
+
+
+==> Grouping with Parentheses
+if you want to get a group so enclosed in paratheses.
+r'(\d\d\d)-(\d\d\d-\d\d\d\d)'
+
+
+==> Using Escape Characters
+to detect these chars you need to add backslash.
+\$ \(\) \* \+ \- \. \? \[\\ \] \^ \{\| \}
+
+ 
+==> Matching Characters
+The | character is called a pipe, and it’s used as the alternation operator in regular expressions.
+r'Cat|Dog'
+
+==> Returning All Matches
+Search() method return match obj of firtst match text in search string. findall() method return string of every match in searched string.
+
+
+==> Qualifier Syntax:
+Regular expression divide into two parts qalifiers that define what you want to match and quantifiers that define how many chars you want to match.
+In r'\d{3}-\d{3}-\d{4}' phone number regex string example we’ve been using, the r'\d' and '-' parts are qualifiers and the '{3}' and '{4}' are quantifiers. 
+
+==> You can use this [a-zA-Z0-9]
+inside the square brackets, the normal regular expression symbols are not interpreted mean You do not need to escape characters such as parentheses inside the square brackets if you want to match literal parentheses.
+
+==> Quantifier Syntax:
+In regular expression quantifier follow quallifiers to indicate how many. if no qantifier so the qualifier will apears only once. r'\d{1}' same as  r'\d'
+
+
+==> Greedy and Non-greedy Matching
+ Regular expression in python are greedy by default mean ambigiuous situation they match longest string.
+ Non greedy called lazy version of curly brackets match shortest string must follow closing curly bracket with ?.
+
+==> Matching Everything
+Some time we want to match Everything and anything. lets suspose we match string first_name followed by any text and Last_name.
+we can use .* so here . mean any single character except newline and * meam match repeatdly.
+
+==> Substituting Strings
+Enter the text of group 1, 2, 3, and so on, in the substitution. This syntax is called a back reference.
+
+==> Managing Complex Regexes with Verbose Mode
+Its too hard to read long and complex regex. You can mitigate this complexity by telling the re.compile() function to ignore whitespace and comments inside the regular expression string.
+
+==> Combining re.IGNORECASE, re.DOTALL, and re.VERBOSE
+What if you want to use re.VERBOSE to write comments in your regular expression, but also want to use re.IGNORECASE to ignore capitalization? Unfortunately, the re.compile() function takes only a single value as its second argument

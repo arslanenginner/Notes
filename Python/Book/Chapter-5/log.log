@@ -1,0 +1,21 @@
+DEBUG:root:debug
+INFO:root:info
+WARNING:root:warning
+ERROR:root:error
+CRITICAL:root:critical
+DEBUG:root:Start of program
+DEBUG:root:Start of factorial(5)
+DEBUG:root:i is 1, total is 1
+DEBUG:root:i is 2, total is 2
+DEBUG:root:i is 3, total is 6
+DEBUG:root:i is 4, total is 24
+DEBUG:root:i is 5, total is 120
+DEBUG:root:End of factorial(5)
+DEBUG:root:End of program
+DEBUG:root:Some minor code and debugging details
+INFO:root:An event happened
+WARNING:root:Something cloud go wrong
+ERROR:root:Error has occured
+CRITICAL:root:Program unable to recover
+CRITICAL:root:Some critical error
+CRITICAL:root:Some critical error
